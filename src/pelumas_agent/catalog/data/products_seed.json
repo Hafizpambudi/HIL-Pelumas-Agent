@@ -1,0 +1,475 @@
+{
+  "products": [
+    {
+      "part_no": "BM250",
+      "name": "Avery Hardoll BM250",
+      "aliases": ["BM 250", "BM-250", "avery bm 250", "bm250"],
+      "brand": "Avery Hardoll",
+      "category": "flow_meter",
+      "subcategory": "positive displacement",
+      "slug": "avery-hardoll-bm250",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/flow-meter-avery-hardoll/avery-hardoll-bm250",
+      "data_confidence": "high",
+      "status": "active",
+      "description_id": "Flow meter positive displacement 2 1/2 inch untuk pengisian bahan bakar penerbangan (avgas / Jet A1). Rentang aliran 115-1140 liter per menit dengan akurasi tinggi. Dipakai di depot dan bandara, bukan untuk solar niaga umum.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 2.5, "value_text": "2 1/2 inch", "unit": "inch", "source": "datasheet", "confidence": "high"},
+        {"key": "connection_type", "value_text": "flange ASA", "unit": null, "source": "datasheet", "confidence": "high"},
+        {"key": "flange_rating", "value_text": "ASA 150 FF", "unit": null, "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 10.5, "value_text": "10.5 bar (150 psi)", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 115, "value_text": "115 l/m", "unit": "L/min", "source": "site", "confidence": "high"},
+        {"key": "flow_max_lpm", "value_num": 1140, "value_text": "1140 l/m", "unit": "L/min", "source": "site", "confidence": "high"},
+        {"key": "fluid", "value_text": "avgas, jet A1", "unit": null, "source": "datasheet", "confidence": "high"},
+        {"key": "accuracy_pct", "value_num": 0.1, "value_text": "+/- 0.1%", "unit": "%", "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "BM850",
+      "name": "Avery Hardoll BM850",
+      "aliases": ["BM 850", "BM-850"],
+      "brand": "Avery Hardoll",
+      "category": "flow_meter",
+      "subcategory": "positive displacement",
+      "slug": "avery-hardoll-bm850",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/flow-meter-avery-hardoll/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Flow meter Avery Hardoll kelas besar untuk hidran bandara. Catatan: halaman situs menyalin blok spesifikasi BM-850 ke halaman BM250, jadi angka di bawah perlu konfirmasi sebelum dipakai.",
+      "specs": [
+        {"key": "flow_min_lpm", "value_num": 115, "value_text": "115 l/m", "unit": "L/min", "source": "site", "confidence": "low"},
+        {"key": "flow_max_lpm", "value_num": 3780, "value_text": "3780 l/m", "unit": "L/min", "source": "site", "confidence": "low"}
+      ]
+    },
+    {
+      "part_no": "M40",
+      "name": "LC M40 Flow Meter",
+      "aliases": ["LC M-40", "M-40"],
+      "brand": "LC",
+      "category": "flow_meter",
+      "subcategory": "positive displacement",
+      "slug": "lc-m40",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter positive displacement LC ukuran 4 inch untuk transfer BBM curah (solar dan bensin). Cocok untuk loading arm dan depot dengan aliran besar.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 4.0, "value_text": "4 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "connection_type", "value_text": "flange ASA", "unit": null, "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 10.3, "value_text": "10.3 bar (150 psi)", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 1325, "value_text": "350 gpm", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 5678, "value_text": "1500 gpm", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "M7",
+      "name": "LC M7 Flow Meter",
+      "aliases": ["LC M-7", "M-7"],
+      "brand": "LC",
+      "category": "flow_meter",
+      "subcategory": "positive displacement",
+      "slug": "lc-m7",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter positive displacement LC ukuran 3 inch untuk transfer BBM curah. Dipakai di depot dan SPBU dengan kebutuhan aliran menengah.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 3.0, "value_text": "3 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 10.3, "value_text": "10.3 bar (150 psi)", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 379, "value_text": "100 gpm", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 1514, "value_text": "400 gpm", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "F100",
+      "name": "Macnaught F100 Flow Meter",
+      "aliases": ["macnaught f 100", "F-100"],
+      "brand": "Macnaught",
+      "category": "flow_meter",
+      "subcategory": "positive displacement",
+      "slug": "macnaught-f100",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter Macnaught F-series 1 inch untuk solar dan bahan bakar ringan. Rentang 10-100 liter per menit, umum dipakai di SPBU dan fleet yard.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "connection_type", "value_text": "BSP", "unit": null, "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 12.0, "value_text": "12 bar", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 10, "value_text": "10 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 100, "value_text": "100 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "MX-04",
+      "name": "Macnaught MX-04 Oval Gear Meter",
+      "aliases": ["MX04", "MX 04"],
+      "brand": "Macnaught",
+      "category": "flow_meter",
+      "subcategory": "oval gear",
+      "slug": "macnaught-mx-04",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter oval gear Macnaught 3/4 inch untuk solar dan oli. Tekanan kerja tinggi sampai 70 bar, cocok untuk aplikasi dosing dan transfer tekanan tinggi.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 0.75, "value_text": "3/4 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "connection_type", "value_text": "BSP", "unit": null, "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 70.0, "value_text": "70 bar", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 1, "value_text": "1 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 100, "value_text": "100 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, lubricant", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "40",
+      "name": "Z-Flo 40 Flow Meter",
+      "aliases": ["z-flo 40 meter", "zflo 40", "Z-FLO 40"],
+      "brand": "Z-Flo",
+      "category": "flow_meter",
+      "subcategory": "oval gear",
+      "slug": "z-flo-40-meter",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/z-flo-flow-meter/z-flo-40-meter",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter oval gear Z-Flo 1 inch untuk solar dan bahan bakar ringan. Rentang 15-90 liter per menit, alternatif ringkas untuk metering SPBU.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "site", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 10.0, "value_text": "10 bar", "unit": "bar", "source": "site", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 15, "value_text": "15 l/m", "unit": "L/min", "source": "site", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 90, "value_text": "90 l/m", "unit": "L/min", "source": "site", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "site", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "G10",
+      "name": "Flomec G10 Oval Gear Meter",
+      "aliases": ["Flomec G-10"],
+      "brand": "Flomec",
+      "category": "flow_meter",
+      "subcategory": "oval gear",
+      "slug": "flomec-g10",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter oval gear Flomec 3/4 inch untuk solar dan pelumas. Kompak, cocok untuk transfer bahan bakar skala kecil sampai menengah.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 0.75, "value_text": "3/4 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 21.0, "value_text": "21 bar (300 psi)", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 2, "value_text": "2 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 60, "value_text": "60 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, lubricant", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "FHF-3010",
+      "name": "Tokico FHF-3010 Flow Meter",
+      "aliases": ["tokico fhf", "tokico flow meter"],
+      "brand": "Tokico",
+      "category": "flow_meter",
+      "subcategory": "positive displacement",
+      "slug": "tokico-flow-meter",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Flow meter Tokico 1 inch untuk solar, umum dipakai di instalasi SPBU Jepang. Rentang 30-300 liter per menit.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_min_lpm", "value_num": 30, "value_text": "30 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 300, "value_text": "300 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": null,
+      "name": "Flo-Rite Flow Meter",
+      "aliases": ["florite"],
+      "brand": "Flo-Rite",
+      "category": "flow_meter",
+      "subcategory": null,
+      "slug": "flo-rite-flow-meter",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Flow meter Flo-Rite. Spesifikasi belum dipublikasikan di situs, mohon tanyakan langsung untuk konfirmasi model dan ukuran.",
+      "specs": []
+    },
+    {
+      "part_no": null,
+      "name": "OGM Flow Meter",
+      "aliases": ["ogm meter"],
+      "brand": "OGM",
+      "category": "flow_meter",
+      "subcategory": null,
+      "slug": "ogm-flow-meter",
+      "source_url": "https://www.cahayapelumasindo.com/flow-meter/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Flow meter OGM. Spesifikasi belum dipublikasikan, perlu konfirmasi model ke tim kami.",
+      "specs": []
+    },
+    {
+      "part_no": "PZ10",
+      "name": "Corken PZ10 Vane Pump",
+      "aliases": ["Corken PZ-10", "PZ-10"],
+      "brand": "Corken",
+      "category": "pompa",
+      "subcategory": "vane",
+      "slug": "corken-pz10",
+      "source_url": "https://www.cahayapelumasindo.com/pompa/",
+      "data_confidence": "high",
+      "status": "active",
+      "description_id": "Pompa vane Corken PZ10 untuk transfer LPG dan gas cair. Sambungan 1 inch, aliran sampai sekitar 45 liter per menit. Standar instalasi depot LPG.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch NPT", "unit": "inch", "source": "datasheet", "confidence": "high"},
+        {"key": "connection_type", "value_text": "NPT", "unit": null, "source": "datasheet", "confidence": "high"},
+        {"key": "max_pressure_bar", "value_num": 12.5, "value_text": "12.5 bar", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 45, "value_text": "45 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "lpg", "unit": null, "source": "datasheet", "confidence": "high"}
+      ]
+    },
+    {
+      "part_no": "R10",
+      "name": "Ebsray R10 Vane Pump",
+      "aliases": ["ebsray r 10"],
+      "brand": "Ebsray",
+      "category": "pompa",
+      "subcategory": "vane",
+      "slug": "ebsray-r10",
+      "source_url": "https://www.cahayapelumasindo.com/pompa/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Pompa vane Ebsray R10 untuk transfer solar dan bensin. Sambungan 1 inch, aliran sampai sekitar 90 liter per menit, umum untuk SPBU.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch BSP", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "connection_type", "value_text": "BSP", "unit": null, "source": "datasheet", "confidence": "medium"},
+        {"key": "max_pressure_bar", "value_num": 7.0, "value_text": "7 bar", "unit": "bar", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 90, "value_text": "90 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "HUSKY-1050",
+      "name": "Graco Husky 1050 Diaphragm Pump",
+      "aliases": ["husky 1050", "graco husky"],
+      "brand": "Graco",
+      "category": "pompa",
+      "subcategory": "diaphragm",
+      "slug": "graco-husky-1050",
+      "source_url": "https://www.cahayapelumasindo.com/pompa/",
+      "data_confidence": "high",
+      "status": "active",
+      "description_id": "Pompa diafragma AODD Graco Husky 1050 ukuran 1 inch, digerakkan udara. Aliran sampai 121 liter per menit, aman untuk solar, air, dan solvent. Bisa dry-run tanpa rusak.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "datasheet", "confidence": "high"},
+        {"key": "max_pressure_bar", "value_num": 7.0, "value_text": "7 bar (100 psi)", "unit": "bar", "source": "datasheet", "confidence": "high"},
+        {"key": "flow_max_lpm", "value_num": 121, "value_text": "121 l/m (32 gpm)", "unit": "L/min", "source": "datasheet", "confidence": "high"},
+        {"key": "fluid", "value_text": "diesel, water, solvent, lubricant", "unit": null, "source": "datasheet", "confidence": "high"}
+      ]
+    },
+    {
+      "part_no": null,
+      "name": "Southern Cross ISO Pump",
+      "aliases": ["southern cross pump"],
+      "brand": "Southern Cross",
+      "category": "pompa",
+      "subcategory": "centrifugal",
+      "slug": "southern-cross-iso-pump",
+      "source_url": "https://www.cahayapelumasindo.com/pompa/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Pompa sentrifugal Southern Cross standar ISO. Spesifikasi lengkap belum dipublikasikan, perlu konfirmasi model dan kapasitas.",
+      "specs": []
+    },
+    {
+      "part_no": "FP203",
+      "name": "Husky Automatic Heavy Nozzle",
+      "aliases": ["Husky Automatic Heavy Nozle", "husky nozle", "nozzle husky"],
+      "brand": "Husky",
+      "category": "nozzle_gun",
+      "subcategory": "automatic",
+      "slug": "husky-automatic-heavy-nozzle",
+      "source_url": "https://www.cahayapelumasindo.com/nozzle-gun/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Nozzle otomatis Husky kelas berat 1 inch untuk pengisian solar dan bensin debit besar, standar SPBU. Auto shut-off saat tangki penuh.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 200, "value_text": "200 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": "G75",
+      "name": "Gazzo G75 Nozzle",
+      "aliases": ["gazzo nozzle"],
+      "brand": "Gazzo",
+      "category": "nozzle_gun",
+      "subcategory": "manual",
+      "slug": "gazzo-nozzle",
+      "source_url": "https://www.cahayapelumasindo.com/nozzle-gun/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Nozzle Gazzo untuk pengisian bahan bakar. Informasi di situs terbatas, ukuran sambungan perlu dikonfirmasi.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 0.75, "value_text": "3/4 inch", "unit": "inch", "source": "site", "confidence": "low"},
+        {"key": "fluid", "value_text": "petrol", "unit": null, "source": "site", "confidence": "low"}
+      ]
+    },
+    {
+      "part_no": "FM20",
+      "name": "Flomax FM20 Nozzle",
+      "aliases": ["flomax nozzle"],
+      "brand": "Flomax",
+      "category": "nozzle_gun",
+      "subcategory": "automatic",
+      "slug": "flomax-fm20",
+      "source_url": "https://www.cahayapelumasindo.com/nozzle-gun/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Nozzle otomatis Flomax 1 inch untuk solar, aliran sampai 200 liter per menit. Alternatif nozzle SPBU debit besar.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "datasheet", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 200, "value_text": "200 l/m", "unit": "L/min", "source": "datasheet", "confidence": "medium"},
+        {"key": "fluid", "value_text": "diesel, petrol", "unit": null, "source": "datasheet", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": null,
+      "name": "Banlaw Nozzle",
+      "aliases": [],
+      "brand": "Banlaw",
+      "category": "nozzle_gun",
+      "subcategory": null,
+      "slug": "banlaw-nozzle",
+      "source_url": "https://www.cahayapelumasindo.com/nozzle-gun/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Nozzle Banlaw untuk pengisian alat berat. Spesifikasi belum dipublikasikan di situs.",
+      "specs": []
+    },
+    {
+      "part_no": "AM-1IN",
+      "name": "Amico Water Meter 1 Inch",
+      "aliases": ["amico water meter", "meteran air amico"],
+      "brand": "Amico",
+      "category": "water_meter",
+      "subcategory": "multi jet",
+      "slug": "amico-water-meter",
+      "source_url": "https://www.cahayapelumasindo.com/water-meter/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Water meter Amico 1 inch tipe multi-jet kelas B untuk air bersih, umum untuk gedung dan perumahan. Koneksi drat BSP.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "site", "confidence": "medium"},
+        {"key": "flow_max_lpm", "value_num": 50, "value_text": "Q3 3 m3/h", "unit": "L/min", "source": "site", "confidence": "medium"},
+        {"key": "fluid", "value_text": "water", "unit": null, "source": "site", "confidence": "high"}
+      ]
+    },
+    {
+      "part_no": null,
+      "name": "Itron Water Meter",
+      "aliases": ["meteran air itron"],
+      "brand": "Itron",
+      "category": "water_meter",
+      "subcategory": null,
+      "slug": "itron-water-meter",
+      "source_url": "https://www.cahayapelumasindo.com/water-meter/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Water meter Itron untuk air bersih. Model dan ukuran perlu dikonfirmasi.",
+      "specs": [
+        {"key": "fluid", "value_text": "water", "unit": null, "source": "site", "confidence": "high"}
+      ]
+    },
+    {
+      "part_no": null,
+      "name": "Graco Hose Reel 15 m",
+      "aliases": ["hose reel graco", "graco reel"],
+      "brand": "Graco",
+      "category": "hose_reel",
+      "subcategory": "closed",
+      "slug": "graco-hose-reel",
+      "source_url": "https://www.cahayapelumasindo.com/hose-reel/",
+      "data_confidence": "medium",
+      "status": "active",
+      "description_id": "Hose reel Graco dengan selang 15 meter untuk jalur pengisian bahan bakar. Menjaga area kerja rapi dan selang awet.",
+      "specs": [
+        {"key": "connection_size_in", "value_num": 1.0, "value_text": "1 inch", "unit": "inch", "source": "site", "confidence": "medium"},
+        {"key": "hose_length_m", "value_num": 15, "value_text": "15 m", "unit": "m", "source": "site", "confidence": "medium"}
+      ]
+    },
+    {
+      "part_no": null,
+      "name": "Z-Flo Hose Reel",
+      "aliases": ["hose reel z-flo"],
+      "brand": "Z-Flo",
+      "category": "hose_reel",
+      "subcategory": "open",
+      "slug": "z-flo-hose-reel",
+      "source_url": "https://www.cahayapelumasindo.com/hose-reel/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Hose reel Z-Flo. Ukuran selang dan koneksi perlu dikonfirmasi.",
+      "specs": []
+    },
+    {
+      "part_no": null,
+      "name": "Safety Hammer",
+      "aliases": ["palu pemecah kaca"],
+      "brand": "Generic",
+      "category": "aksesoris",
+      "subcategory": "safety",
+      "slug": "hammer",
+      "source_url": "https://www.cahayapelumasindo.com/aksesoris/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Palu keselamatan untuk keadaan darurat di area pengisian.",
+      "specs": []
+    },
+    {
+      "part_no": null,
+      "name": "Life Vest",
+      "aliases": ["rompi pelampung"],
+      "brand": "Generic",
+      "category": "aksesoris",
+      "subcategory": "safety",
+      "slug": "life-vest",
+      "source_url": "https://www.cahayapelumasindo.com/aksesoris/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Rompi pelampung untuk area kerja dermaga dan pengisian bahan bakar kapal.",
+      "specs": []
+    },
+    {
+      "part_no": null,
+      "name": "Wind Sock",
+      "aliases": ["windsock", "penunjuk arah angin"],
+      "brand": "Generic",
+      "category": "aksesoris",
+      "subcategory": "safety",
+      "slug": "wind-sock",
+      "source_url": "https://www.cahayapelumasindo.com/aksesoris/",
+      "data_confidence": "low",
+      "status": "active",
+      "description_id": "Penunjuk arah angin untuk area pengisian, wajib di instalasi SPBU dan depot.",
+      "specs": []
+    }
+  ],
+  "fitment_rules": [
+    {"code": "FM-1", "category": "flow_meter", "dimension": "connection_size_in", "relation": "eq", "threshold": {}, "rationale": "Ukuran sambungan pembeli harus sama dengan meter; jika beda, sebutkan kedua ukuran dan opsi adaptor.", "verified_by": "docs/04-catalog-and-fitment.md"},
+    {"code": "FM-2", "category": "flow_meter", "dimension": "max_pressure_bar", "relation": "gte", "threshold": {"margin": 0.1}, "rationale": "Tekanan kerja maksimum meter harus >= tekanan sistem pembeli plus margin 10 persen.", "verified_by": "docs/04-catalog-and-fitment.md"},
+    {"code": "FM-3", "category": "flow_meter", "dimension": "flow_range", "relation": "overlap", "threshold": {}, "rationale": "Aliran pembeli harus berada dalam rentang flow_min sampai flow_max meter.", "verified_by": "docs/04-catalog-and-fitment.md"},
+    {"code": "FM-4", "category": "flow_meter", "dimension": "fluid", "relation": "in_set", "threshold": {}, "rationale": "Fluida harus ada dalam set fluida yang didukung meter; meter penerbangan untuk solar adalah pertanyaan, bukan ya.", "verified_by": "docs/04-catalog-and-fitment.md"},
+    {"code": "FM-5", "category": "flow_meter", "dimension": "flange_rating", "relation": "eq", "threshold": {}, "rationale": "Rating flange harus cocok atau bisa diadaptasi.", "verified_by": "docs/04-catalog-and-fitment.md"},
+    {"code": "FM-6", "category": "flow_meter", "dimension": "accuracy_pct", "relation": "lte", "threshold": {}, "rationale": "Jika pembeli menyebut standar metering, bandingkan akurasi/repeatability yang dipublikasikan; jangan klaim standar yang tidak dipublikasikan.", "verified_by": "docs/04-catalog-and-fitment.md"}
+  ],
+  "equivalences": [
+    {"a_part_no": "BM250", "b_part_no": "M40", "relation": "close", "differing_dims": {"connection_size_in": "2.5 vs 4", "flow_range": "115-1140 vs 1325-5678 lpm"}, "verified_by": null, "confidence": "medium"},
+    {"a_part_no": "F100", "b_part_no": "40", "relation": "close", "differing_dims": {"flow_max_lpm": "100 vs 90", "flow_min_lpm": "10 vs 15"}, "verified_by": null, "confidence": "medium"},
+    {"a_part_no": "FP203", "b_part_no": "FM20", "relation": "close", "differing_dims": {}, "verified_by": null, "confidence": "medium"},
+    {"a_part_no": "PZ10", "b_part_no": "R10", "relation": "close", "differing_dims": {"fluid": "lpg vs diesel/petrol"}, "verified_by": null, "confidence": "medium"}
+  ]
+}

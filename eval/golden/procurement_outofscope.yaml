@@ -1,0 +1,42 @@
+- id: proc-001
+  bucket: procurement
+  turns: ["minta penawaran resmi untuk BM250, 2 unit, kirim ke Jakarta"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+    text_includes: ["RFQ-", "admin"]
+- id: proc-002
+  bucket: procurement
+  turns: ["butuh quotation LC M7, 1 pcs Surabaya"]
+  expected:
+    resolution: [M7]
+    forbidden: [price, stock_claim]
+    text_includes: ["RFQ-"]
+- id: proc-003
+  bucket: procurement
+  turns: ["bisa kirim invoice dan NPWP?"]
+  expected:
+    resolution: unresolved
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: proc-004
+  bucket: procurement
+  turns:
+    - "mau minta penawaran Macnaught MX-04"
+    - "3 unit ke Bekasi ya"
+  expected:
+    resolution: [MX-04]
+    forbidden: [price, stock_claim]
+    text_includes: ["RFQ-"]
+- id: oos-001
+  bucket: out_of_scope
+  turns: ["bisa servis meteran saya yang rusak?"]
+  expected:
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: oos-002
+  bucket: out_of_scope
+  turns: ["terima kerja sama iklan?"]
+  expected:
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask

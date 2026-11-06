@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pelumas Agent — WhatsApp RFQ agent for an industrial fuel-equipment distributor</title>
+<meta name="description" content="A WhatsApp agent that turns a messy B2B inquiry into a price-ready RFQ. It never quotes price, never asserts unverified stock, never guesses fitment.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Pelumas Agent · CV Cahaya Pelumasindo</div>
+    <nav class="nav-links">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="demo.html">Demo</a>
+      <a href="https://github.com/Hafizpambudi/HIL-Pelumas-Agent" rel="noopener">Source</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Tool-calling agent · WhatsApp Business · 2026</p>
+      <h1>The WhatsApp admin is the checkout.</h1>
+      <p class="lede">
+        CV Cahaya Pelumasindo publishes <strong>91 products with no prices</strong>.
+        Every page ends with one button: <em>Cek Harga dan Ketersediaan</em> — which
+        opens a chat with one of two admins. This agent does not sell. It converts a
+        messy inquiry into a <strong>price-ready RFQ</strong>, and it is structurally
+        unable to quote a price.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="demo.html">Open live demo →</a>
+        <a class="btn ghost" href="#measured">See the measured numbers</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap" style="display:contents">
+      <div class="stat"><span class="num">91</span><span class="label">Automated tests</span></div>
+      <div class="stat"><span class="num">41/41</span><span class="label">Golden set cases</span></div>
+      <div class="stat"><span class="num">44/44</span><span class="label">Adversarial cases</span></div>
+      <div class="stat"><span class="num">0</span><span class="label">Safety escapes</span></div>
+    </div>
+  </div>
+
+  <section class="block" id="problem">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">01</span><h2>Problem</h2></div>
+      <div class="grid-3">
+        <div class="card">
+          <span class="tag">Leak 1</span>
+          <h3>Price is a conversation, not a page</h3>
+          <p>Nothing can be decided without an admin. Every inquiry is a human
+             dependency, so volume cannot grow without headcount.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Leak 2</span>
+          <h3>The inquiry arrives unstructured</h3>
+          <p>A buyer sends "flow meter solar buat pertamina 2 nozzle, budget 15jt".
+             Someone must reconstruct part, quantity, spec, company, city and urgency
+             before anything can be priced. Repeated hundreds of times.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Leak 3</span>
+          <h3>Out of stock is invisible</h3>
+          <p>Availability is unpublished. When a part is unavailable the thread stalls
+             or dies, even though the catalog carries many interchangeable brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="flow">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">02</span><h2>Flow</h2></div>
+      <div class="flow">
+        <div class="flow-step"><b>Buyer</b><span>WhatsApp inquiry, free-form, Indonesian</span></div>
+        <div class="flow-step"><b>Orchestrator</b><span>State machine + bounded LLM loop</span></div>
+        <div class="flow-step"><b>Tools</b><span>Exact → filtered → semantic retrieval, fitment rules</span></div>
+        <div class="flow-step guard"><b>Outbound guard</b><span>Price, stock and fitment claims blocked in code</span></div>
+        <div class="flow-step"><b>RFQ</b><span>Validated record, human-readable id</span></div>
+        <div class="flow-step"><b>Admin</b><span>Compact WhatsApp handoff; admin sets price</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="built">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">03</span><h2>What I built</h2></div>
+      <ul class="clean">
+        <li><b>Retrieval is exact-first.</b> Part number, then structured spec filters,
+            then semantic candidates. A semantic hit is never stated as a fitment fact.</li>
+        <li><b>Fitment is curated, not inferred.</b> Six explicit rules (connection size,
+            pressure with a 10% margin, flow range, fluid, flange, accuracy) evaluated in
+            order; the first failing dimension is reported.</li>
+        <li><b>Guards run after generation, in code.</b> Currency patterns, stock assertions
+            and compatibility claims are validated on the outbound message and replaced with
+            a safe fallback. Prompts are not a guarantee; this is.</li>
+        <li><b>The handoff is the product.</b> An RFQ is only emitted with a resolvable item,
+            a quantity and a delivery city. The record is written before the admin message
+            is sent.</li>
+        <li><b>Availability is a state machine.</b> <span class="mono">available | indent | unknown | discontinued</span>
+            with source and timestamp. In manual mode every answer is "perlu dicek ke gudang".</li>
+        <li><b>Price relay is audited.</b> A price reaches a buyer only after an admin action,
+            and every relay stores admin identity, timestamp, raw message and RFQ id.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="measured">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">04</span><h2>Measured</h2></div>
+      <table class="data">
+        <thead>
+          <tr><th>Suite</th><th>Cases</th><th>Passed</th><th>Safety failures</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Golden set — resolution, fitment, RFQ, substitution</td><td class="num">41</td><td class="num ok">41</td><td class="num ok">0</td></tr>
+          <tr><td>Adversarial set — price extraction, stock probing, injection, fitment bait</td><td class="num">44</td><td class="num ok">44</td><td class="num ok">0</td></tr>
+          <tr><td>Unit and integration tests</td><td class="num">91</td><td class="num ok">91</td><td class="num ok">0</td></tr>
+        </tbody>
+      </table>
+      <p style="color:var(--ink-soft);font-size:0.9rem;margin-top:16px">
+        Guard rules are additionally proven in the demo, where each forbidden message and
+        its replacement are shown side by side.
+      </p>
+      <ul class="clean" style="margin-top:18px">
+        <li><b>Admin silence has a deadline.</b> At handoff the buyer is told the expected
+            reply window. If the admin has not answered by then, the buyer receives one
+            honest update, the admin receives one reminder, and the thread stays visible in
+            the pending queue. Nothing is promised twice.</li>
+        <li><b>After 24 hours</b> the notice switches to a WhatsApp template, because
+            free-form replies are no longer allowed.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="limits">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">05</span><h2>Limits, stated plainly</h2></div>
+      <div class="limits">
+        <h3>What this demo does not prove</h3>
+        <ul class="clean">
+          <li>The catalog is a <b>24-product demo subset</b>, not the client's 91 products.
+              Real fitment tables need manufacturer datasheets and a named verifier.</li>
+          <li>Availability is <b>manual only</b>. No stock source exists yet, so every
+              availability answer is a warehouse check, never a claim.</li>
+          <li>Demo conversations are <b>recorded replays</b>. The agent runs the same code,
+              but you are watching transcripts, not a live WhatsApp number.</li>
+          <li>Equivalence pairs are seeded at <em>medium</em> confidence, so the agent always
+              labels substitutions "kandidat, perlu konfirmasi teknis".</li>
+          <li>Eval numbers come from the deterministic mock model, not from a frontier model
+              under production traffic.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>Pelumas Agent · demo build</span>
+    <a href="demo.html">Open the demo →</a>
+  </div>
+</footer>
+
+</body>
+</html>

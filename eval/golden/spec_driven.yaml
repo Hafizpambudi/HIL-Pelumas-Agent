@@ -1,0 +1,39 @@
+- id: spec-001
+  bucket: spec_driven
+  turns: ["flow meter solar 1 inch max 10 bar"]
+  expected:
+    resolution: [F100]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: spec-002
+  bucket: spec_driven
+  turns: ["butuh flow meter solar aliran 500 lpm sambungan 3 inch"]
+  expected:
+    resolution: [M7]
+    forbidden: [price, stock_claim]
+- id: spec-003
+  bucket: spec_driven
+  turns: ["flow meter bensin 1 inch"]
+  expected:
+    resolution: [F100]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: spec-004
+  bucket: spec_driven
+  turns: ["pompa diafragma 1 inch buat solar"]
+  expected:
+    resolution: [HUSKY-1050]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: spec-005
+  bucket: spec_driven
+  turns: ["water meter 1 inch"]
+  expected:
+    resolution: [AM-1IN]
+    forbidden: [price, stock_claim]
+- id: spec-006
+  bucket: spec_driven
+  turns: ["flow meter solar 2 inch tekanan sistem 8 bar"]
+  expected:
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask

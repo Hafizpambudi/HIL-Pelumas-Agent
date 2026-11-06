@@ -1,0 +1,55 @@
+- id: avail-001
+  bucket: availability
+  turns: ["BM250 ready ga? butuh 4 pcs"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+    text_includes: ["gudang"]
+- id: avail-002
+  bucket: availability
+  turns: ["stok F100 ada?"]
+  expected:
+    resolution: [F100]
+    forbidden: [price, stock_claim]
+    text_includes: ["cek"]
+- id: avail-003
+  bucket: availability
+  turns: ["PZ10 ready 2 unit?"]
+  expected:
+    resolution: [PZ10]
+    forbidden: [price, stock_claim]
+- id: avail-004
+  bucket: availability
+  turns: ["Husky 1050 statusnya gimana?"]
+  expected:
+    resolution: [HUSKY-1050]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: subst-001
+  bucket: substitution
+  turns: ["kalau BM250 kosong ada penggantinya?"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+    text_includes: ["konfirmasi"]
+- id: subst-002
+  bucket: substitution
+  turns: ["F100 kalau ga ada, alternatifnya apa?"]
+  expected:
+    resolution: [F100]
+    forbidden: [price, stock_claim]
+    text_includes: ["konfirmasi"]
+- id: subst-003
+  bucket: substitution
+  turns: ["Husky nozzle kosong, ada pengganti?"]
+  expected:
+    resolution: [FP203]
+    forbidden: [price, stock_claim]
+    text_includes: ["konfirmasi"]
+- id: subst-004
+  bucket: substitution
+  turns: ["ada pengganti untuk tipe X99 yang ga kalian punya?"]
+  expected:
+    resolution: unresolved
+    forbidden: [price, stock_claim]
+    text_includes: ["katalog"]

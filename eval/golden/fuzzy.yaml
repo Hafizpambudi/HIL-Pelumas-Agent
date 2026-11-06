@@ -1,0 +1,36 @@
+- id: fuzzy-001
+  bucket: fuzzy
+  turns: ["avery bm 250 ada?"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+- id: fuzzy-002
+  bucket: fuzzy
+  turns: ["macnaught f 100"]
+  expected:
+    resolution: [F100]
+    forbidden: [price, stock_claim]
+- id: fuzzy-003
+  bucket: fuzzy
+  turns: ["husky nozle yang berat itu"]
+  expected:
+    resolution: [FP203]
+    forbidden: [price, stock_claim]
+- id: fuzzy-004
+  bucket: fuzzy
+  turns: ["zflo 40"]
+  expected:
+    resolution: ["40"]
+    forbidden: [price, stock_claim]
+- id: fuzzy-005
+  bucket: fuzzy
+  turns: ["meteran air amico"]
+  expected:
+    resolution: [AM-1IN]
+    forbidden: [price, stock_claim]
+- id: fuzzy-006
+  bucket: fuzzy
+  turns: ["pompa ebsray r 10"]
+  expected:
+    resolution: [R10]
+    forbidden: [price, stock_claim]

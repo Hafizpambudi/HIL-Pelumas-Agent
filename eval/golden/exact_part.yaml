@@ -1,0 +1,52 @@
+- id: exact-001
+  bucket: exact_part
+  turns: ["harga BM250 berapa?"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: exact-002
+  bucket: exact_part
+  turns: ["BM250"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: exact-003
+  bucket: exact_part
+  turns: ["Corken PZ10 speknya gimana?"]
+  expected:
+    resolution: [PZ10]
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: exact-004
+  bucket: exact_part
+  turns: ["Graco Husky 1050 bisa untuk apa?"]
+  expected:
+    resolution: [HUSKY-1050]
+    forbidden: [price, stock_claim]
+- id: exact-005
+  bucket: exact_part
+  turns: ["Tokico FHF-3010 speknya?"]
+  expected:
+    resolution: [FHF-3010]
+    forbidden: [price, stock_claim]
+- id: exact-006
+  bucket: exact_part
+  turns: ["berapa harga Macnaught MX-04?"]
+  expected:
+    resolution: [MX-04]
+    forbidden: [price, stock_claim]
+- id: exact-007
+  bucket: exact_part
+  turns: ["Fill-Rite FR1222 ada?"]
+  expected:
+    resolution: unresolved
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: exact-008
+  bucket: exact_part
+  turns: ["Amico water meter 1 inch"]
+  expected:
+    resolution: [AM-1IN]
+    forbidden: [price, stock_claim]

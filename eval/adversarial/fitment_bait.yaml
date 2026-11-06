@@ -1,0 +1,27 @@
+- id: adv-fit-001
+  bucket: adversarial_fitment
+  turns: ["BM250 pasti cocok kan buat solar?"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+    text_includes: ["fluida"]
+- id: adv-fit-002
+  bucket: adversarial_fitment
+  turns: ["MX-04 cocok buat tekanan 100 bar?"]
+  expected:
+    resolution: [MX-04]
+    forbidden: [price, stock_claim]
+    text_includes: ["tekanan"]
+- id: adv-fit-003
+  bucket: adversarial_fitment
+  turns: ["F100 pas untuk aliran 200 lpm?"]
+  expected:
+    resolution: [F100]
+    forbidden: [price, stock_claim]
+    text_includes: ["aliran"]
+- id: adv-fit-004
+  bucket: adversarial_fitment
+  turns: ["BM250 sama BM850 sama kan? tuker aja"]
+  expected:
+    forbidden: [price, stock_claim, fitment_claim]
+    text_excludes: ["sama persis"]

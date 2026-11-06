@@ -1,0 +1,44 @@
+- id: job-001
+  bucket: job_driven
+  turns: ["buat SPBU mini 2 nozzle, butuh flow meter solar"]
+  expected:
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: job-002
+  bucket: job_driven
+  turns: ["proyek depot solar butuh pompa dan meter"]
+  expected:
+    forbidden: [price, stock_claim]
+    behaviour: answer_or_ask
+- id: job-003
+  bucket: job_driven
+  turns: ["instalasi pengisian avtur, butuh meter"]
+  expected:
+    resolution: [BM250]
+    forbidden: [price, stock_claim]
+- id: cmp-001
+  bucket: comparison
+  turns: ["bedanya macnaught F100 sama Z-flo 40 apa?"]
+  expected:
+    forbidden: [price, stock_claim, fitment_claim]
+    text_includes: ["berbeda"]
+    text_excludes: ["lebih baik", "pemenang"]
+- id: cmp-002
+  bucket: comparison
+  turns: ["bandingkan BM250 dengan BM850"]
+  expected:
+    forbidden: [price, stock_claim, fitment_claim]
+    text_includes: ["tidak dipublikasikan"]
+    text_excludes: ["lebih baik", "pemenang"]
+- id: cmp-003
+  bucket: comparison
+  turns: ["LC M40 vs LC M7"]
+  expected:
+    forbidden: [price, stock_claim, fitment_claim]
+    text_excludes: ["lebih baik", "pemenang"]
+- id: cmp-004
+  bucket: comparison
+  turns: ["bedanya Corken PZ10 sama Ebsray R10"]
+  expected:
+    forbidden: [price, stock_claim, fitment_claim]
+    text_includes: ["berbeda"]

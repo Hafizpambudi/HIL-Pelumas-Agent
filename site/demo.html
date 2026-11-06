@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">Demo — Pelumas Agent</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Rekaman percakapan agent WhatsApp.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/demo.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">Pelumas Agent · CV Cahaya Pelumasindo</div>
+    <div class="topbar-right">
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="nav.overview">Ikhtisar</a>
+        <a href="demo.html" aria-current="page" data-i18n="nav.demo">Demo</a>
+        <a href="https://github.com/Hafizpambudi/HIL-Pelumas-Agent" rel="noopener" data-i18n="nav.source">Sumber</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Pilih bahasa" data-i18n-attr="aria-label:lang.group">
+        <button type="button" class="lang-btn" data-lang="id" aria-pressed="true" data-i18n="lang.id">id</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" data-i18n="lang.en">en</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" style="padding:44px 24px 64px">
+
+  <p class="eyebrow" data-i18n="hero.eyebrow">Demo · rekaman percakapan</p>
+  <h1 style="max-width:26ch" data-i18n="hero.h1">Tujuh percakapan, satu perilaku.</h1>
+  <p class="lede" style="margin-bottom:26px" data-i18n="hero.lede">
+    Pilih skenario. Pesan ditampilkan satu per satu; panel kanan menunjukkan
+    tool yang dipanggil, tahap percakapan, dan record RFQ yang benar-benar dibuat.
+  </p>
+
+  <div class="demo-note">
+    <strong data-i18n="note.strong">Ini rekaman, bukan nomor WhatsApp aktif.</strong>
+    <span data-i18n="note.body">
+      Semua percakapan dijalankan dengan kode agent yang sama terhadap katalog demo
+      24 produk dan model deterministik. Tidak ada harga dari katalog publik, dan
+      agent tidak pernah menyebut angka harga kecuali dari tindakan admin.
+    </span>
+  </div>
+
+  <div class="scenario-list" id="scenario-list" role="tablist" data-i18n-attr="aria-label:scenario.list"></div>
+
+  <div class="demo-shell">
+    <section class="chat-pane" aria-label="Percakapan" data-i18n-attr="aria-label:chat.pane">
+      <div class="chat-head">
+        <div class="avatar">CV</div>
+        <div>
+          <div class="chat-title" data-i18n="chat.title">CV Cahaya Pelumasindo</div>
+          <div class="chat-sub" id="chat-sub" data-i18n="chat.subEmpty">Agent AI · online</div>
+        </div>
+      </div>
+      <div class="chat-body" id="chat-body" aria-live="polite"></div>
+      <div class="chat-foot">
+        <button class="btn small" id="btn-play" data-i18n="btn.play">Putar</button>
+        <button class="btn small ghost" id="btn-step" data-i18n="btn.step">Langkah</button>
+        <button class="btn small ghost" id="btn-replay" data-i18n="btn.replay">Ulang</button>
+        <span class="chip" id="progress-chip">0 / 0</span>
+        <label class="speed">
+          <span data-i18n="speed.label">Kecepatan</span>
+          <select id="speed">
+            <option value="1400" data-i18n="speed.slow">Lambat</option>
+            <option value="900" selected data-i18n="speed.normal">Normal</option>
+            <option value="450" data-i18n="speed.fast">Cepat</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <aside class="inspector" aria-label="Inspector">
+      <div class="inspector-head" data-i18n="insp.head">Inspector · per langkah</div>
+      <div class="inspector-body">
+        <div class="insp-section">
+          <h4 data-i18n="insp.stage">Tahap percakapan</h4>
+          <span class="stage-pill" id="stage-pill">—</span>
+        </div>
+        <div class="insp-section">
+          <h4 data-i18n="insp.tools">Tool yang dipanggil</h4>
+          <div id="tool-list"><span class="empty" data-i18n="empty.tools">Belum ada tool.</span></div>
+        </div>
+        <div class="insp-section">
+          <h4 data-i18n="insp.guard">Guard</h4>
+          <div id="guard-list"><span class="empty" data-i18n="empty.guard">Belum ada langkah.</span></div>
+        </div>
+        <div class="insp-section">
+          <h4 data-i18n="insp.rfq">Record RFQ</h4>
+          <div id="rfq-card"><span class="empty" data-i18n="empty.rfq">Belum ada RFQ.</span></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="legend">
+    <span class="l-buyer" data-i18n="legend.buyer">Pembeli</span>
+    <span class="l-agent" data-i18n="legend.agent">Agent</span>
+    <span class="l-admin" data-i18n="legend.admin">Handoff ke admin</span>
+  </div>
+
+  <section class="block" style="border-bottom:0;padding-bottom:0">
+    <div class="section-head">
+      <span class="section-num" data-i18n="guard.section">Bukti guard</span>
+      <h2 data-i18n="guard.h2">Pesan terlarang dan penggantinya</h2>
+    </div>
+    <p style="color:var(--ink-soft);font-size:0.92rem;max-width:70ch" data-i18n="guard.body">
+      Guard berjalan pada pesan keluar, setelah generation. Setiap teks di bawah
+      diuji langsung ke fungsi guard yang sama dengan yang dipakai agent.
+    </p>
+    <table class="guard-table" id="guard-table">
+      <thead>
+        <tr>
+          <th style="width:88px" data-i18n="guard.thRule">Aturan</th>
+          <th data-i18n="guard.thAttempt">Teks terlarang</th>
+          <th data-i18n="guard.thOutcome">Yang dikirim</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span data-i18n="footer.build">Pelumas Agent · demo build</span>
+    <a href="index.html" data-i18n="footer.back">← Kembali ke overview</a>
+  </div>
+</footer>
+
+<script src="assets/demo.js"></script>
+</body>
+</html>
